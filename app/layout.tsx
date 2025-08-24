@@ -1,10 +1,22 @@
 import type { Metadata } from "next";
-import { Noto_Serif_Display, Geist_Mono } from "next/font/google";
+import { Instrument_Serif, Carattere, Lexend } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/components/ui/theme-provider";
+import { Navbar } from "@/components/Navbar";
 
-const geistSans = Noto_Serif_Display({
-  variable: "--font-noto",
+const instrument  = Instrument_Serif({
+  variable: "--font-instrument-serif",
   subsets: ["latin"],
+  weight: "400",
+});
+const lexend = Lexend({
+  variable: "--lexend",
+  subsets: ["latin"],
+});
+const carattere = Carattere({
+  variable: "--font-carattere",
+  subsets: ["latin"],
+  weight: "400", 
 });
 
 
@@ -21,9 +33,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.className} antialiased`}
+        className={`${lexend.className} ${instrument.variable}  ${carattere.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+
+          <Navbar/>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
