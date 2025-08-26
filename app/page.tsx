@@ -1,3 +1,4 @@
+
 import BlurText from "@/components/BlurText";
 import Section3 from "@/components/homepage/Section3";
 import { AnimatedGradientText } from "@/components/magicui/animated-gradient-text";

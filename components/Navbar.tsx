@@ -56,7 +56,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function Navbar() {
     return (
-        <header className="sticky top-0 z-40 w-full border-b bg-background">
+        <header className="sticky top-0 z-40 w-full  bg-transparent backdrop-blur-3xl ">
             <div className=" flex justify-between container mx-auto p-4">
 
                 <div>
@@ -194,7 +194,7 @@ export function Navbar() {
                                         <li className="group flex justify-center items-end ">
                                             <NavigationMenuLink asChild>
                                                 <Link
-                                                    href="#"
+                                                    href="/services"
                                                     
                                                     className={`
                                                         bg-neutral-400

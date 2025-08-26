@@ -47,7 +47,7 @@ const services: Service[] = [
 ];
 
 export const ServicesMenu = () => {
-
+    const [showHighlight, setShowHighlight] = useState(false);
     return (
         <>
             <div className="flex flex-col items-center justify-center gap-5 mb-20">
@@ -72,18 +72,19 @@ export const ServicesMenu = () => {
                 </div>
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
+                    // animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     className="text-5xl instrument-font font-bold">
                     Where we <span className="carattere-font">
-                        <Highlighter action="underline" color="#FF9800" >
-                            Excel
-                        </Highlighter> </span> in
-                </motion.div>
 
+                        {/* highlighter not working */}
+                        Excel
+                    </span> in
+                </motion.div>
             </div>
 
-            <div className="flex flex-col items-center  border-green-700">
+            <div className="flex flex-col items-center border-green-700">
                 {
                     services.map((service) => (
                         <div key={service.id} className="relative group grid grid-cols-3 items-center justify-items-center hover:h-32 h-28 w-full bg-background hover:bg-pink-600 transition-all duration-300">

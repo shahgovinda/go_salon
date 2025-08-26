@@ -21,22 +21,25 @@ const Section3 = () => {
                     <div className="text-5xl text- text-center">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            // animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
+                            whileInView={{ opacity: 1, y: 0 }}
                         >
                             <span className="instrument-font ">The harmony between </span>
                             <span className="carattere-font ">powerful high- </span><br />
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            // animate={{ opacity: 1, y: 0 }}
+                            whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.5 }}>
                             <span className="carattere-font ">performance ingredients </span>
                             <span className="instrument-font">and exceptionally</span><br />
                         </motion.div>
                         <motion.span
                             initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            // animate={{ opacity: 1, y: 0 }}
+                            whileInView={{ opacity: 1, y: 20 }}
                             transition={{ duration: 0.5, delay: 1 }}
                             className="instrument-font">simple skincare routines.</motion.span>
 
