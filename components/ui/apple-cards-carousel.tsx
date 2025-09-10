@@ -5,6 +5,7 @@ import React, {
   useState,
   createContext,
   useContext,
+  JSX,
 } from "react";
 import {
   IconArrowNarrowLeft,
@@ -121,7 +122,6 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                     duration: 0.5,
                     delay: 0.2 * index,
                     ease: "easeOut",
-                    once: true,
                   },
                 }}
                 key={"card" + index}
@@ -163,7 +163,7 @@ export const Card = ({
   layout?: boolean;
 }) => {
   const [open, setOpen] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null!);
   const { onCardClose, currentIndex } = useContext(CarouselContext);
 
   useEffect(() => {
@@ -231,7 +231,7 @@ export const Card = ({
               >
                 {card.title}
               </motion.p>
-              <div className="py-10">{card.content}</div>
+              {/* <div className="py-10">{card.content}</div> */}
             </motion.div>
           </div>
         )}

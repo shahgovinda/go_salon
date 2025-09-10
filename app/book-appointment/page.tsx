@@ -15,7 +15,6 @@ import { ArrowUpRight, CalendarIcon } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
 import { useForm, ValidationError } from '@formspree/react';
-import { useState } from "react";
 import { Confetti, ConfettiRef } from '@/components/magicui/confetti'
 import Link from 'next/link'
 
@@ -54,8 +53,8 @@ export default function Page() {
                     <p className="text-2xl font-bold text-pink-600 instrument-font">
                         Your Appointment has been Booked.
                     </p>
-                    <div className='flex gap-5'>
-                        <Link href="/" className='flex items-center justify-center'>
+                    <div className='flex gap-5 z-10'>
+                        <Link href="/" className='flex p-1 items-center justify-center'>
                             <Button variant={"ghost"}>Home<ArrowUpRight /></Button>
                         </Link>
                         {/* <Link href="/" className='text-base  border border-foreground instrument-font rounded-full px-3 cursor-pointer py-2'>HomePage</Link> */}
