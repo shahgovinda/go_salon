@@ -3,7 +3,7 @@ import { AnimatedGradientText } from '@/components/magicui/animated-gradient-tex
 import React from 'react'
 import { AnimatePresence, motion } from "motion/react";
 import { cn } from '@/lib/utils';
-import { StickyScroll } from '@/components/ui/sticky-scroll-reveal';
+
 import BlurText from '@/components/BlurText';
 import { BlurFade } from '@/components/magicui/blur-fade';
 import { CometCard } from '@/components/ui/comet-card';
