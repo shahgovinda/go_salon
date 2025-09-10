@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from "lucide-react"
+import { CircleCheckIcon, CircleHelpIcon, CircleIcon, Facebook, Instagram, Twitter } from "lucide-react"
 
 import {
     NavigationMenu,
@@ -15,243 +15,102 @@ import {
 } from "@/components/ui/navigation-menu"
 import { ModeToggle } from "./ThemeToggle"
 import { Button } from "./ui/button"
-
-const components: { title: string; href: string; description: string }[] = [
-    {
-        title: "Alert Dialog",
-        href: "/docs/primitives/alert-dialog",
-        description:
-            "A modal dialog that interrupts the user with important content and expects a response.",
-    },
-    {
-        title: "Hover Card",
-        href: "/docs/primitives/hover-card",
-        description:
-            "For sighted users to preview content available behind a link.",
-    },
-    {
-        title: "Progress",
-        href: "/docs/primitives/progress",
-        description:
-            "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-    },
-    {
-        title: "Scroll-area",
-        href: "/docs/primitives/scroll-area",
-        description: "Visually or semantically separates content.",
-    },
-    {
-        title: "Tabs",
-        href: "/docs/primitives/tabs",
-        description:
-            "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-    },
-    {
-        title: "Tooltip",
-        href: "/docs/primitives/tooltip",
-        description:
-            "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-    },
-]
+import { motion, AnimatePresence } from "motion/react"
 
 export function Navbar() {
+    const [open, setOpen] = React.useState(false)
     return (
         <header className="sticky top-0 z-40 w-full  bg-transparent backdrop-blur-3xl ">
-            <div className=" flex justify-between container mx-auto p-4">
-
-                <div>
-                    <p className="text-5xl carattere-font font-bold ">priya</p>
+            <div className=" flex justify-between container mx-auto py-4 px-7 lg:p-4">
+                <div className="flex  items-center gap-2">
+                    <span className="flex lg:hidden gap-1 flex-col px-2 py-3 " onClick={() => setOpen(!open)}>
+                        <div className="h-1 w-6 rounded-full bg-foreground"></div>
+                        <div className="h-1 w-3 rounded-full bg-foreground"></div>
+                    </span>
+                    <Link href="/" className="text-4xl lg:text-5xl carattere-font font-bold ">priya.</Link>
                 </div>
-                <NavigationMenu viewport={true} className="">
+                <NavigationMenu viewport={true} className="hidden lg:flex">
                     <NavigationMenuList className="instrument-font text-lg ">
-                        <NavigationMenuItem>
-                            <NavigationMenuTrigger className="" >Services</NavigationMenuTrigger>
-                            <NavigationMenuContent>
-                                <ul className="grid gap-2 w-[500px] md:grid-cols-3">
-                                    {/* {[
-                                        { name: "HairCut", img: "/hair.jpeg" },
-                                        { name: "Facial", img: "https://facesspa.com/wp-content/uploads/2020/07/AdobeStock_143330491.jpeg" },
-                                        { name: "Threading", img: "https://beautyandmelody.co.uk/wp-content/uploads/2020/12/Eyebrow-threading-Woman.jpg" },
-                                        { name: "Pedicure", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFFRee40qqF3fX92jyt8MIlGCWbuBJ2-ZeBA&s" },
-                                        { name: "Waxing", img: "https://sumansalon.in/wp-content/uploads/2024/02/adobestock-230088894-scaled.jpeg.webp" },
-                                        { name: "View All", img: "https://cdn.vectorstock.com/i/preview-1x/88/75/woman-face-beauty-icon-silhouette-vector-43428875.jpg" },
-                                    ].map((service) => ( */}
-                                        <li className="group flex justify-center items-end ">
-                                            <NavigationMenuLink asChild>
-                                                <Link
-                                                    href="#"
-                                                    style={{ backgroundImage: `url('/hair.jpeg')` }}
-                                                    className={`
-                                                       bg-cover bg-center
-                                                        h-40 w-40
-                                                        rounded-2xl flex flex-col items-start justify-end
-                                                        px-2 py-2 
-                                                        group-hover:scale-105
-                                                        transition-all duration-300
-                                                        shadow-lg
-                                                        cursor-pointer
-                                                        relative
-                                                        overflow-hidden
-                                                    `}
-                                                >
-                                                    
-                                                    <p className="group-hover:underline text-[30px] carattere-font font-bold text-white">HairCut</p>
-                                                </Link>
-                                            </NavigationMenuLink>
-                                        </li>
-                                        <li className="group flex justify-center items-end ">
-                                            <NavigationMenuLink asChild>
-                                                <Link
-                                                    href="#"
-                                                    style={{ backgroundImage: `url('https://facesspa.com/wp-content/uploads/2020/07/AdobeStock_143330491.jpeg')` }}
-                                                    className={`
-                                                       bg-cover bg-center
-                                                        h-40 w-40
-                                                        rounded-2xl flex flex-col items-start justify-end
-                                                        px-2 py-2 
-                                                        group-hover:scale-105
-                                                        transition-all duration-300
-                                                        shadow-lg
-                                                        cursor-pointer
-                                                        relative
-                                                        overflow-hidden
-                                                    `}
-                                                >
-                                                    
-                                                    <p className="group-hover:underline text-[30px] carattere-font font-bold text-white">Facial</p>
-                                                </Link>
-                                            </NavigationMenuLink>
-                                        </li>
-                                        <li className="group flex justify-center items-end ">
-                                            <NavigationMenuLink asChild>
-                                                <Link
-                                                    href="#"
-                                                    style={{ backgroundImage: `url('https://beautyandmelody.co.uk/wp-content/uploads/2020/12/Eyebrow-threading-Woman.jpg')` }}
-                                                    className={`
-                                                       bg-cover bg-center
-                                                        h-40 w-40
-                                                        rounded-2xl flex flex-col items-start justify-end
-                                                        px-2 py-2 
-                                                        group-hover:scale-105
-                                                        transition-all duration-300
-                                                        shadow-lg
-                                                        cursor-pointer
-                                                        relative
-                                                        overflow-hidden
-                                                    `}
-                                                >
-                                                    
-                                                    <p className="group-hover:underline text-[30px] carattere-font font-bold text-white">Threading</p>
-                                                </Link>
-                                            </NavigationMenuLink>
-                                        </li>
-                                        <li className="group flex justify-center items-end ">
-                                            <NavigationMenuLink asChild>
-                                                <Link
-                                                    href="#"
-                                                    style={{ backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFFRee40qqF3fX92jyt8MIlGCWbuBJ2-ZeBA&s')` }}
-                                                    className={`
-                                                       bg-cover bg-center
-                                                        h-40 w-40
-                                                        rounded-2xl flex flex-col items-start justify-end
-                                                        px-2 py-2 
-                                                        group-hover:scale-105
-                                                        transition-all duration-300
-                                                        shadow-lg
-                                                        cursor-pointer
-                                                        relative
-                                                        overflow-hidden
-                                                    `}
-                                                >
-                                                    
-                                                    <p className="group-hover:underline text-[30px] carattere-font font-bold text-white">Pedicure</p>
-                                                </Link>
-                                            </NavigationMenuLink>
-                                        </li>
-                                        <li className="group flex justify-center items-end ">
-                                            <NavigationMenuLink asChild>
-                                                <Link
-                                                    href="#"
-                                                    style={{ backgroundImage: `url('https://sumansalon.in/wp-content/uploads/2024/02/adobestock-230088894-scaled.jpeg.webp')` }}
-                                                    className={`
-                                                       bg-cover bg-center
-                                                        h-40 w-40
-                                                        rounded-2xl flex flex-col items-start justify-end
-                                                        px-2 py-2 
-                                                        group-hover:scale-105
-                                                        transition-all duration-300
-                                                        shadow-lg
-                                                        cursor-pointer
-                                                        relative
-                                                        overflow-hidden
-                                                    `}
-                                                >
-                                                    
-                                                    <p className="group-hover:underline text-[30px] carattere-font font-bold text-white">Waxing</p>
-                                                </Link>
-                                            </NavigationMenuLink>
-                                        </li>
-                                        <li className="group flex justify-center items-end ">
-                                            <NavigationMenuLink asChild>
-                                                <Link
-                                                    href="/services"
-                                                    
-                                                    className={`
-                                                        bg-neutral-400
-                                                       bg-cover bg-center
-                                                        h-40 w-40
-                                                        rounded-2xl flex flex-col items-start justify-end
-                                                        px-2 py-2 
-                                                        group-hover:scale-105
-                                                        transition-all duration-300
-                                                        shadow-lg
-                                                        cursor-pointer
-                                                        relative
-                                                        overflow-hidden
-                                                    `}
-                                                >
-                                                    
-                                                    <p className="group-hover:underline text-[30px] carattere-font font-bold text-white">Browse All</p>
-                                                </Link>
-                                            </NavigationMenuLink>
-                                        </li>
-                                    {/* ))} */}
-                                </ul>
-                            </NavigationMenuContent>
-                        </NavigationMenuItem>
 
                         <NavigationMenuItem>
                             <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                                <Link href="/docs">Beauticians</Link>
+                                <Link href="/services">Services</Link>
+                            </NavigationMenuLink>
+                        </NavigationMenuItem>
+                        <NavigationMenuItem>
+                            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                                <Link href="/beauticians">Beauticians</Link>
+                            </NavigationMenuLink>
+                        </NavigationMenuItem>
+                        <NavigationMenuItem>
+                            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                                <Link href="/look-book">Look Book</Link>
+                            </NavigationMenuLink>
+                        </NavigationMenuItem>
+                        <NavigationMenuItem>
+                            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                                <Link href="/bridal">Bridal</Link>
                             </NavigationMenuLink>
                         </NavigationMenuItem>
 
                         <NavigationMenuItem>
                             <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                                <Link href="/docs">Bridal MakeUp</Link>
-                            </NavigationMenuLink>
-                        </NavigationMenuItem>
-
-                        <NavigationMenuItem>
-                            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                                <Link href="/docs">Locations</Link>
-                            </NavigationMenuLink>
-                        </NavigationMenuItem>
-                       
-                        <NavigationMenuItem>
-                            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                                <Link href="/docs">About</Link>
+                                <Link href="/about">About</Link>
                             </NavigationMenuLink>
                         </NavigationMenuItem>
 
                     </NavigationMenuList>
 
                 </NavigationMenu>
-                <div className="flex items-center gap-2">
+                <div className="hidden lg:flex items-center gap-2">
                     <ModeToggle />
-                    <Button>Book Now</Button>
+                    <Link href={"/book-appointment"}>
+                        <Button  >Book Now</Button>
+                    </Link>
+                </div>
+                <div className="lg:hidden flex items-center gap-2">
+                    <ModeToggle />
+                    <Link href={"/book-appointment"}>
+                        <Button size={"sm"}  >Book Now</Button>
+                    </Link>
                 </div>
             </div>
+
+            <AnimatePresence>
+                {open &&
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: -20 }}
+                        className="fixed top-0 left-0 h-screen w-screen flex flex-col justify-bet bg-background z-10 overflow-  " >
+
+                        <div className="flex items-center gap-2 py-4 px-7 border">
+                            <span className="flex lg:hidden gap-1 flex-col px-2 py-3 " onClick={() => setOpen(false)}>
+                                <div className="h-1 w-6 rounded-full bg-foreground rotate-45"></div>
+                                <div className="h-1 w-6 rounded-full bg-foreground -rotate-45"></div>
+                            </span>
+                            <Link href="/" className="text-4xl lg:text-5xl carattere-font font-bold">priya.</Link>
+                        </div>
+
+                        <div className="flex flex-col gap-8 instrument-font text-4xl items-center justify-center h-full border">
+
+                            <Link href="/" onClick={() => setOpen(false)}>Home</Link>
+                            <Link href="/services" onClick={() => setOpen(false)}>Services</Link>
+                            <Link href="/beauticians" onClick={() => setOpen(false)}>Beauticians</Link>
+                            <Link href="/bridal" onClick={() => setOpen(false)}>Bridal</Link>
+                            <Link href="/about" onClick={() => setOpen(false)}>About</Link>
+                            <Button size={"lg"} className="w-3/4" onClick={() => setOpen(false)}>Book Now</Button>
+                        </div>
+                        <div>
+                            <div className="h-20 flex items-center justify-center gap-4 border">
+                                <Instagram className="size-5" />
+                                <Facebook className="size-5" />
+                                <Twitter className="size-5" />
+                            </div>
+                        </div>
+                    </motion.div>
+                }
+            </AnimatePresence>
         </header>
     )
 }

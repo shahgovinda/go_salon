@@ -11,6 +11,7 @@ import {
   MotionProps,
 } from "motion/react";
 import BlurText from '@/components/BlurText';
+import  Link from 'next/link';
 
 type Service = {
   name: string;
@@ -104,14 +105,14 @@ const page = () => {
   const rightCategories = services.slice(mid);
 
   return (
-    <main>
-      <div className="container px-40 py-40  mx-auto ">
+    <main className=''>
+      <div className="container lg:px-40 lg:py-40 px-5 py-20 mx-auto ">
         <div className='flex flex-col items-center justify-center gap-5 '>
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, scale: 2 }}
+            animate={{ opacity: 1, scale: 1 }}
             // whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1 }}
             className="group relative flex  rounded-full px-5 py-1.5   ">
             <span
               className={cn(
@@ -127,15 +128,30 @@ const page = () => {
               }}
             />
 
-            <AnimatedGradientText className="text-9xl   font-bold carattere-font">
-              Services
+            <AnimatedGradientText className="text-7xl md:text-8xl lg:text-9xl  font-bold carattere-font">
+              Services.
             </AnimatedGradientText>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            // whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className=" flex items-center justify-center rounded-full lg:w-[50rem]   ">
+
+            <BlurText
+              text={"Unveil the potential of your strands through our curated treatments."}
+              delay={40}
+              animateBy="words"
+              direction="top"
+              className="text-lg lg:text-2xl flex justify-center instrument-font font-bold"
+            />
           </motion.div>
         </div>
 
         <section className='mt-40'>
           <div>
-            <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-20 mb-30">
               {/* Left column */}
               <div>
                 {leftCategories.map((cat, i) => (
@@ -145,7 +161,7 @@ const page = () => {
                     transition={{ duration: 0.5, delay: i * 0.5 }}
 
                     key={i} className="mb-8">
-                    <h3 className="text-4xl font-bold carattere-font mb-4">{cat.category}</h3>
+                    <h3 className="text-4xl font-bold instrument-font mb-4">{cat.category}</h3>
                     {cat.services.map((srv) => (
                       <div
                         key={srv.name}
@@ -163,13 +179,13 @@ const page = () => {
               </div>
               {/* Right column */}
               <div>
-                {rightCategories.map((cat,i) => (
+                {rightCategories.map((cat, i) => (
                   <motion.div
                     initial={{ opacity: 0, x: 90 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: i * 0.5 }}
                     key={i} className="mb-8">
-                    <h3 className="text-4xl font-bold carattere-font mb-4">{cat.category}</h3>
+                    <h3 className="text-4xl font-bold instrument-font mb-4">{cat.category}</h3>
                     {cat.services.map((srv) => (
                       <div
                         key={srv.name}
@@ -186,6 +202,10 @@ const page = () => {
                 ))}
               </div>
             </div>
+            <Link href="/beauticians" className='text-center gap-5 group '>
+              <p className="text-xl text-muted-foreground instrument-font group-hover:text-pink-500 transition-colors">Next</p>
+              <p className="text-7xl text-muted-foreground  md:text-8xl lg:text-9xl  font-bold carattere-font group-hover:text-foreground transition-colors">Beauticians</p>
+            </Link>
           </div>
         </section>
       </div>
