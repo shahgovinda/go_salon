@@ -1,9 +1,7 @@
 "use client"
-
 import * as React from "react"
 import Link from "next/link"
-import { CircleCheckIcon, CircleHelpIcon, CircleIcon, Facebook, Instagram, Twitter } from "lucide-react"
-
+import { CircleCheckIcon, CircleHelpIcon, CircleIcon, Facebook, Instagram, Twitter, X } from "lucide-react"
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -71,7 +69,7 @@ export function Navbar() {
                 <div className="lg:hidden flex items-center gap-2">
                     <ModeToggle />
                     <Link href={"/book-appointment"}>
-                        <Button size={"sm"}  >Book Now</Button>
+                        <Button size={"sm"}>Book Now</Button>
                     </Link>
                 </div>
             </div>
@@ -84,10 +82,9 @@ export function Navbar() {
                         exit={{ opacity: 0, x: -20 }}
                         className="fixed top-0 left-0 h-screen w-screen flex flex-col justify-bet bg-background z-10 overflow-  " >
 
-                        <div className="flex items-center gap-2 py-4 px-7 border">
+                        <div className="flex items-center gap-2 py-2 px-7 ">
                             <span className="flex lg:hidden gap-1 flex-col px-2 py-3 " onClick={() => setOpen(false)}>
-                                <div className="h-1 w-6 rounded-full bg-foreground rotate-45"></div>
-                                <div className="h-1 w-6 rounded-full bg-foreground -rotate-45"></div>
+                                <X className="size-9 stroke-2" />
                             </span>
                             <Link href="/" className="text-4xl lg:text-5xl carattere-font font-bold">priya.</Link>
                         </div>
@@ -99,7 +96,9 @@ export function Navbar() {
                             <Link href="/beauticians" onClick={() => setOpen(false)}>Beauticians</Link>
                             <Link href="/bridal" onClick={() => setOpen(false)}>Bridal</Link>
                             <Link href="/about" onClick={() => setOpen(false)}>About</Link>
-                            <Button size={"lg"} className="w-3/4" onClick={() => setOpen(false)}>Book Now</Button>
+                            <Link href="/book-appointment" className="w-full flex items-center justify-center" onClick={() => setOpen(false)}>
+                                <Button size={"lg"} className="w-3/4" onClick={() => setOpen(false)}>Book Now</Button>
+                            </Link>
                         </div>
                         <div>
                             <div className="h-20 flex items-center justify-center gap-4 border">

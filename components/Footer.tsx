@@ -84,6 +84,7 @@ const Footer = () => {
 
                 </div>
             </div>
+                <p className='text-center border-t py-5 text-sm'>Crafted with ❤️ by Yuvraj Verma</p>
         </footer>
     )
 }

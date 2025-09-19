@@ -48,7 +48,7 @@ export default function Page() {
     // Show confirmation message in place of form
     if (state.succeeded) {
         return (
-            <main className="container h-svh lg:px-20 lg:py-20 px-5 py-5 mx-auto ">
+            <main className="container h-svh lg:px-20 lg:py-20 px-5  mx-auto ">
                 <div className="relative flex flex-col items-center justify-center gap-5 h-full">
                     <p className="text-2xl font-bold text-pink-600 instrument-font">
                         Your Appointment has been Booked.
@@ -73,7 +73,7 @@ export default function Page() {
     }
 
     return (
-        <main className="container h-svh lg:px-20 lg:py-20  py-5 mx-auto ">
+        <main className="container   lg:px-20 lg:py-20  py-5 mx-auto ">
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
                 <div className=''>
                     <BlurFade delay={1} className='relative' blur="15px" inView>
@@ -84,7 +84,7 @@ export default function Page() {
                         <h1 className='absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl md:4xl lg:text-8xl font-bold instrument-font uppercase   text-pink-500'>Book an Appointment</h1>
                     </BlurFade>
                 </div>
-                <div className=" p-10 h-full">
+                <div className=" p-10 h-full ">
                     <form onSubmit={handleSubmit} className=' flex flex-col justify-between h-full gap-5 md:gap-0'>
                         <div className='flex gap-5'>
                             <Input type="text" name="name" id="name" placeholder='Enter your Name' required />

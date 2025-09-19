@@ -74,11 +74,11 @@ const page = () => {
     ));
     return (
         <main >
-            <section className="min-h-screen lg:px-40 lg:py-40 px-5 py-20   mx-auto ">
+            <section className="lg:px-40 lg:py-40 px-10 py-20   mx-auto ">
                 <div className='flex lg:flex-row flex-col items-center justify-between gap-3 '>
                     <BlurFade delay={0.5} className='' blur="15px" inView>
                         <img
-                            className=" size-110 object-cover"
+                            className=" size-110 object-cover hidden lg:block"
                             src={"https://t3.ftcdn.net/jpg/15/41/31/64/240_F_1541316486_qLy2gEMRJSdLycVOmmTm3CRbPCTi3xKy.jpg"}
                         />
                     </BlurFade>
@@ -89,9 +89,9 @@ const page = () => {
                             // whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1 }}
                             className="group relative flex rounded-full">
-                            <p className='absolute -top-4 left-10 -rotate-18 text-4xl text-orange-500'>👑</p>
+                            {/* <p className='absolute -top-4 left-10 -rotate-18 text-4xl text-orange-500'>👑</p> */}
                             {/* <Crown className="absolute top-0 left-15 -rotate-18 size-6 text-orange-500" /> */}
-                            <AnimatedGradientText className="text-7xl md:text-8xl lg:text-9xl font-bold carattere-font">
+                            <AnimatedGradientText className="text-7xl md:text-8xl lg:text-9xl font-bold text-center carattere-font">
                                 Bridal Makeup.
                             </AnimatedGradientText>
                         </motion.div>
@@ -100,7 +100,7 @@ const page = () => {
                             animate={{ opacity: 1 }}
                             // whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1 }}
-                            className=" flex items-center justify-center rounded-full w-[50rem]   ">
+                            className=" flex items-center justify-center rounded-full lg:w-[50rem]   ">
 
                             <BlurText
                                 text={"Whether it is your wedding day, anniversary, graduation, prom, fashion shoot, photo shoot, or any other special occasion, let us take care of your hair and makeup needs. We will create the look of your desire, be it the latest runway trends or a traditional look."}
@@ -117,7 +117,7 @@ const page = () => {
                             <Button size={"sm"} variant={"destructive"} >View Gallery</Button>
                         </div>
                     </div>
-                    <BlurFade delay={0.5} className='' blur="15px" inView>
+                    <BlurFade delay={0.5} className='mt-9 lg:mt-0' blur="15px" inView>
                         <img
                             className=" size-110 object-cover"
                             src={"https://as1.ftcdn.net/v2/jpg/07/98/06/72/1000_F_798067228_bNqNBU1O2gYuYAha7ZdIc1ErwMreyUYo.jpg"}
@@ -151,7 +151,7 @@ const page = () => {
                                 // animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                className=" border border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05] dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15] flex gap-6 p-10 flex-col justify-center items-start  cursor-default"
+                                className=" border border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05] focus-within:bg-gray-950/[.05] dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15] dark:focus-within:bg-gray-50/[.15] flex gap-6 p-10 flex-col justify-center items-start  cursor-default"
                             >
                                 <h3 className="text-5xl text-pink-500 font-bold instrument-font">
                                     {service.title}
@@ -166,7 +166,7 @@ const page = () => {
                             </motion.div>
                         ))}
                     </div>
-                    <div className='mt-20'>
+                    {/* <div className='mt-20'>
                         <div className="w-full h-full py-20">
                             <motion.div
                                 initial={{ opacity: 0, y: -20 }}
@@ -176,12 +176,12 @@ const page = () => {
                                 className="text-5xl instrument-font text-center font-bold">
                                 View <span className="carattere-font">
                                     {/* highlighter not working */}
-                                    Gallery
+                                    {/* Gallery
                                 </span>
                             </motion.div>
                             <Carousel items={cards} />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </main>

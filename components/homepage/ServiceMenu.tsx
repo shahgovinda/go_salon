@@ -71,7 +71,7 @@ export const ServicesMenu = () => {
             <div className="flex flex-col items-center border-green-700">
                 {
                     services.map((service) => (
-                        <div key={service.id} className="relative group grid grid-cols-3 items-center justify-items-center hover:h-32 h-28 w-full  hover:bg-pink-600 transition-all duration-300">
+                        <div key={service.id} className="relative group grid grid-cols-3 items-center justify-items-center hover:h-32 h-28 w-full focus-within:bg-pink-600 hover:bg-pink-600 transition-all duration-300">
                             <div className=" size-28 left-0  "></div>
                             <img className="absolute lg:block hidden opacity-0 group-hover:opacity-100 object-cover  size-40 left-53" src={service.image} alt="" />
                             <div>
