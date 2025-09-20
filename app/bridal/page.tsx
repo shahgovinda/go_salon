@@ -114,7 +114,10 @@ const page = () => {
                             <Link href="/book-appointment">
                                 <Button size={"sm"}>Book An Apppointment</Button>
                             </Link>
-                            <Button size={"sm"} variant={"destructive"} >View Gallery</Button>
+                            <Link href="/look-book">
+                                <Button size={"sm"} variant={"destructive"} >View Gallery</Button>
+                            </Link>
+                            
                         </div>
                     </div>
                     <BlurFade delay={0.5} className='mt-9 lg:mt-0' blur="15px" inView>

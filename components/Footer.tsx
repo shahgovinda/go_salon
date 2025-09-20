@@ -15,9 +15,9 @@ const Footer = () => {
                         <p className="text-xl instrument-font ">Contact Info</p>
                         <ul className='space-y-6'>
                             <li className='flex items-center gap-2 text-sm'><Clock size={15} /> 04:00 PM - 10:00 PM</li>
-                            <li className='flex items-center gap-2 text-sm'><Phone size={15} /> +91 7896541235</li>
-                            <li className='flex items-center gap-2 text-sm'><MapPin size={15} />848 E 28th St, Brooklyn NY, USA</li>
-                            <li className='flex items-center gap-2 text-sm'><Mail size={15} />priyakumari43@gmail.com</li>
+                            <li className='flex items-center gap-2 text-sm'><Phone size={15} /> +91 84520 17063</li>
+                            <li className='flex items-center gap-2 text-sm'><MapPin size={15} />Saibaba Nagar,Borivali West, Mumbai 400092</li>
+                            <li className='flex items-center gap-2 text-sm'><Mail size={15} />priyajayprakash456@gmail.com</li>
                         </ul>
                     </div>
                     {/* <div className='flex flex-col gap-5'>
@@ -51,8 +51,8 @@ const Footer = () => {
                         <div className='flex flex-col gap-4'>
                             <Link href="https://www.instagram.com/priya_parlour28?igsh=dm84OHh2NHZqZGFp" target='_blank' className='flex items-center gap-2 text-sm cursor-pointer hover:text-pink-500'>Instagram</Link>
                             <Link href="https://share.google/AKV00srM8tpfOrYXI" target='_blank' className='flex items-center gap-2 text-sm cursor-pointer hover:text-pink-500'>Google</Link>
-                            <Link href="/" className='flex items-center gap-2 text-sm cursor-pointer hover:text-pink-500'>Facebook</Link>
-                            <Link href="/" className='flex items-center gap-2 text-sm cursor-pointer hover:text-pink-500'>Twitter</Link>
+                            {/* <Link href="/" className='flex items-center gap-2 text-sm cursor-pointer hover:text-pink-500'>Facebook</Link>
+                            <Link href="/" className='flex items-center gap-2 text-sm cursor-pointer hover:text-pink-500'>Twitter</Link> */}
                             <Link href="/" className='flex items-center gap-2 text-sm cursor-pointer hover:text-pink-500'>Youtube</Link>
                         </div>
                     </div>
