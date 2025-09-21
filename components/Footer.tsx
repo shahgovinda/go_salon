@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-20 items-start">
                     <div className='flex flex-col gap-5'>
                         <Link href="/" className="text-4xl lg:text-4xl carattere-font font-bold ">priya.</Link>
-                        <p className='text-sm text-justify'>Ayesha Beauty Salon is perspiciatis omnis iste natus laundres veritatis et abster beatae vitae nunc sagittis interdum risusut accumsan.</p>
+                        {/* <p className='text-sm text-justify'>Ayesha Beauty Salon is perspiciatis omnis iste natus laundres veritatis et abster beatae vitae nunc sagittis interdum risusut accumsan.</p> */}
                     </div>
                     <div className='flex flex-col gap-5'>
                         <p className="text-xl instrument-font ">Contact Info</p>

@@ -17,7 +17,17 @@ import { motion, AnimatePresence } from "motion/react"
 import { IconBrandGoogle, IconBrandYoutubeFilled } from "@tabler/icons-react"
 
 export function Navbar() {
-    const [open, setOpen] = React.useState(false)
+    const [open, setOpen] = React.useState(false);
+
+     React.useEffect(() => {
+        if (open) {
+            document.body.classList.add("overflow-hidden")
+        } else {
+            document.body.classList.remove("overflow-hidden")
+        }
+        return () => document.body.classList.remove("overflow-hidden")
+    }, [open])
+    
     return (
         <header className="sticky top-0 z-40 w-full  bg-transparent backdrop-blur-3xl ">
             <div className=" flex justify-between container mx-auto py-4 px-7 lg:p-4">
@@ -81,10 +91,10 @@ export function Navbar() {
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: -20 }}
-                        className="fixed top-0 left-0 h-screen w-screen flex flex-col justify-bet bg-background z-10 overflow-  " >
+                        className="fixed top-0 left-0 h-screen w-screen flex flex-col  bg-background z-10 overflow-hidden" onClick={(e) => e.stopPropagation()} >
 
                         <div className="flex items-center gap-2 py-2 px-7 ">
-                            <span className="flex lg:hidden gap-1 flex-col px-2 py-3 " onClick={() => setOpen(false)}>
+                            <span className="flex lg:hidden gap-1 flex-col px-2 py-3" role="button" aria-label="Open menu" tabIndex={0} onClick={() => setOpen(false)}>
                                 <X className="size-9 stroke-2" />
                             </span>
                             <Link href="/" className="text-4xl lg:text-5xl carattere-font font-bold">priya.</Link>
