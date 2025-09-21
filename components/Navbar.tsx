@@ -1,7 +1,7 @@
 "use client"
 import * as React from "react"
 import Link from "next/link"
-import { CircleCheckIcon, CircleHelpIcon, CircleIcon, Facebook, Instagram, Twitter, X } from "lucide-react"
+import { CircleCheckIcon, CircleHelpIcon, CircleIcon, Facebook, Instagram, Twitter, X, Youtube } from "lucide-react"
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -14,6 +14,7 @@ import {
 import { ModeToggle } from "./ThemeToggle"
 import { Button } from "./ui/button"
 import { motion, AnimatePresence } from "motion/react"
+import { IconBrandGoogle, IconBrandYoutubeFilled } from "@tabler/icons-react"
 
 export function Navbar() {
     const [open, setOpen] = React.useState(false)
@@ -89,7 +90,7 @@ export function Navbar() {
                             <Link href="/" className="text-4xl lg:text-5xl carattere-font font-bold">priya.</Link>
                         </div>
 
-                        <div className="flex flex-col gap-8 instrument-font text-4xl items-center justify-center h-full border">
+                        <div className="flex flex-col gap-8 instrument-font text-4xl items-center justify-center h-full ">
 
                             <Link href="/" onClick={() => setOpen(false)}>Home</Link>
                             <Link href="/services" onClick={() => setOpen(false)}>Services</Link>
@@ -101,10 +102,14 @@ export function Navbar() {
                             </Link>
                         </div>
                         <div>
-                            <div className="h-20 flex items-center justify-center gap-4 border">
-                                <Instagram className="size-5" />
-                                <Facebook className="size-5" />
-                                <Twitter className="size-5" />
+                            <div className="h-20 flex items-center justify-center gap-4 ">
+                                <Link href="https://www.instagram.com/priya_parlour28?igsh=dm84OHh2NHZqZGFp" target='_blank'>
+                                    <Instagram className="size-5" />
+                                </Link>
+                                <Link href="https://share.google/AKV00srM8tpfOrYXI" target='_blank' >
+                                    <IconBrandGoogle className="size-5" />
+                                </Link>
+                                <Youtube className="size-5" />
                             </div>
                         </div>
                     </motion.div>
