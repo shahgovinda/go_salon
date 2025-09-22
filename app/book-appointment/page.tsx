@@ -106,7 +106,8 @@ export default function Page() {
                                         <SelectItem value="borivali">Borivali</SelectItem>
                                         <SelectItem value="kandivali">Kandivali</SelectItem>
                                         <SelectItem value="malad">Malad</SelectItem>
-                                        <SelectItem value="usa">USA</SelectItem>
+                                        <SelectItem value="gorai 2">Gorai 2</SelectItem>
+                                        <SelectItem value="dahisar west">Dahisar</SelectItem>
                                     </SelectContent>
                                 </Select>
                                 {/* Hidden input for location */}
