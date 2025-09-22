@@ -16,7 +16,7 @@ const Footer = () => {
                     <div className='flex flex-col gap-5'>
                         <p className="text-xl instrument-font ">Contact Info</p>
                         <ul className='space-y-6'>
-                            <li className='flex items-center gap-2 text-sm'><Clock size={15} /> 04:00 PM - 10:00 PM</li>
+                            <li className='flex items-center gap-2 text-sm'><Clock size={15} /> 10:00 AM - 10:00 PM</li>
                             <li className='flex items-center gap-2 text-sm'><Phone size={15} /> +91 84520 17063</li>
                             <li className='flex items-center gap-2 text-sm'><MapPin size={15} />Saibaba Nagar,Borivali West, Mumbai 400092</li>
                             <li className='flex items-center gap-2 text-sm'><Mail size={15} />priyajayprakash456@gmail.com</li>
@@ -86,7 +86,7 @@ const Footer = () => {
 
                 </div>
             </div>
-                <p className='text-center border-t py-5 text-sm'>Crafted with ❤️ by Yuvraj Verma</p>
+                <p className='text-center border-t py-5 text-sm'>Crafted with ❤️ by Priya Parlour</p>
         </footer>
     )
 }
