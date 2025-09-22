@@ -3,12 +3,7 @@ import { AnimatedGradientText } from '@/components/magicui/animated-gradient-tex
 import { cn } from '@/lib/utils'
 import React from 'react'
 import {
-  AnimatePresence,
-  motion,
-  useInView,
-  UseInViewOptions,
-  Variants,
-  MotionProps,
+  motion
 } from "motion/react";
 import BlurText from '@/components/BlurText';
 import  Link from 'next/link';

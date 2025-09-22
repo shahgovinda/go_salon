@@ -2,6 +2,8 @@ import { Clock, Mail, MapPin, Phone } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
+// ❌ DO NOT REMOVE THE COMMENTED CODE
+
 const Footer = () => {
     return (
         <footer className=' w-full bg-background backdrop-blur-3xl'>

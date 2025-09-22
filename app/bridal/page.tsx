@@ -48,7 +48,6 @@ const page = () => {
             src: "/bridal/bridal (3).jpg",
             // content: <DummyContent />,
         },
-
         {
             category: "Product",
             title: "Maps for your iPhone 15 Pro Max.",
@@ -74,7 +73,7 @@ const page = () => {
     ));
     return (
         <main >
-            <section className="lg:px-40 lg:py-40 px-10 py-20   mx-auto ">
+            <section className="lg:px-40 lg:py-40 px-10 py-20 mx-auto ">
                 <div className='flex lg:flex-row flex-col items-center justify-between gap-3 '>
                     <BlurFade delay={0.5} className='' blur="15px" inView>
                         <img
