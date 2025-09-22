@@ -71,11 +71,11 @@ const page = () => {
                 <div className="grid grid-cols-1 gap-20 md:grid-cols-2 py-20 ">
                     <div className='flex justify-center'>
                         <h1 className='text-5xl font-bold instrument-font'>
-                            4 Years of Experience and <span>Exellence</span>
+                            10 Years of Experience and <span>Exellence</span>
                         </h1>
                     </div>
                     <div>
-                        <h3 className='text-justify text-sm font-light'>Welcome to Priya Parlour. We have been servicing the Greater Toronto Area for the past 19 years. We offer a full range of the latest beauty and grooming services. We are passionate about helping you with your hair care, skin care, and beauty needs! -MONA (LIC. HAIR STYLIST) If you are looking for flawless skin and beauty services, Priya Parlour is where you need to be. Our excellent professional team knows what your skin and hair need and offer services accordingly. Right from bridal services to beauty services we offer you all under one roof. We offer you a luscious range of face, hair, and skin services specially designed for your skin. Have special skin needs? For all your grooming needs, reach us and we would be glad to help. Book us now!</h3>
+                        <h3 className='text-justify text-sm font-light'>Welcome to Priya Parlour, a cherished beauty haven in Saibabanagar, Borivali West. For us, every client is a valued guest. We founded Priya Parlour with a simple belief: everyone deserves to feel confident, radiant, and cared for. This is the place for those who refuse to compromise on quality. We pour our passion and expertise into every service we offer, from a simple, elegant manicure to a complete bridal transformation. Our promise is to listen to you, understand your vision, and use our skills to bring it to life in a warm, friendly, and pristine setting. Book us now!</h3>
                     </div>
                 </div>
                 <Link href="/beauticians" className='text-center gap-5 group '>
