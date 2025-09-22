@@ -78,7 +78,7 @@ const page = () => {
                     <BlurFade delay={0.5} className='' blur="15px" inView>
                         <img
                             className=" size-110 object-cover hidden lg:block"
-                            src={"https://photos.google.com/share/AF1QipMIxi0S-03JG7a2_ztXwfihZvRmBHe1AKrg7KuCvdWhHdRUjOjRUPspfZ7NQ98eJg/photo/AF1QipNSvies1bBsVs74LFciys1pVhwX2HEe5CqUoZKT?key=RHFpZTlTTUpobkVjb2lJdEpENW1UOThuRGVGTWxn"}
+                             src={"https://t3.ftcdn.net/jpg/15/41/31/64/240_F_1541316486_qLy2gEMRJSdLycVOmmTm3CRbPCTi3xKy.jpg"}
                         />
                     </BlurFade>
                     <div className=' flex flex-col  items-center justify-center gap-7 '>
@@ -122,7 +122,7 @@ const page = () => {
                     <BlurFade delay={0.5} className='mt-9 lg:mt-0' blur="15px" inView>
                         <img
                             className=" size-110 object-cover"
-                            src={"https://photos.google.com/share/AF1QipNcCDFnrPhPGQPlHo6mhT3lTsXxbp-MVA74u-T1r2oG2N1Eaz-mCCoC2UO3GL5ACA/photo/AF1QipNhT8wrnltx15R4S4LZUzq2aVqGsVC2isH-hQC1?key=cmhsa0NfN1hXVFRBRUtSRWRVdmZTcW1NMUxULUxB"}
+                            src={"https://as1.ftcdn.net/v2/jpg/07/98/06/72/1000_F_798067228_bNqNBU1O2gYuYAha7ZdIc1ErwMreyUYo.jpg"}
                         />
                     </BlurFade>
                 </div>
