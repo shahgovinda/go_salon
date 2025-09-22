@@ -122,7 +122,7 @@ const page = () => {
                     <BlurFade delay={0.5} className='mt-9 lg:mt-0' blur="15px" inView>
                         <img
                             className=" size-110 object-cover"
-                            src={"https://as1.ftcdn.net/v2/jpg/07/98/06/72/1000_F_798067228_bNqNBU1O2gYuYAha7ZdIc1ErwMreyUYo.jpg"}
+                            src={"https://photos.app.goo.gl/UuX8ytzztVgv3h4MA"}
                         />
                     </BlurFade>
                 </div>
