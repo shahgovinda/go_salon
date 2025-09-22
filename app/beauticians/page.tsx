@@ -13,17 +13,17 @@ import Link from 'next/link';
 const beauticians = [
   {
     image: "/priya.jpg",
-    name: "Yelena Belova",
-    description: "\"Expert in modern hair styling and color treatments.\"",
-    skill: "Hair Stylist"
+    name: "Priya Shah",
+    description: "\"Expert in modern makeup and skin care.\"",
+    skill: "Makeup Artist"
   },
   {
-    image: "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg",
-    name: "Sophia Lee",
-    description: "\"Specializes in skincare routines and facial therapies.\"",
-    skill: "Skin Care Specialist"
+    image: "/deepa.jpg",
+    name: "Deepa Shah",
+    description: "\"Specializes in mehendi designs.\"",
+    skill: "Mehendi Designer"
   },
-  {
+  /*{
     image: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg",
     name: "Sonia Gandhi",
     description: "\"Renowned for creative makeup artistry for events.\"",
@@ -34,7 +34,7 @@ const beauticians = [
     name: "Emma Stone",
     description: "\"Professional nail technician with unique designs.\"",
     skill: "Nail Artist"
-  },
+  },*/
 
 ];
 
