@@ -52,13 +52,13 @@ export default function Home() {
                         <div className="flex flex-col items-center lg:flex-row gap-8 ">
                             <div className="inline-flex border -space-x-2">
                                 <Avatar>
-                                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                                    <AvatarImage src="priya.jpg" alt="@shadcn" />
                                 </Avatar>
                                 <Avatar>
-                                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                                    <AvatarImage src="priya.jpgg" alt="@shadcn" />
                                 </Avatar>
                                 <Avatar>
-                                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                                    <AvatarImage src="priya.jpg" alt="@shadcn" />
                                 </Avatar>
 
                             </div>
