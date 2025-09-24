@@ -76,10 +76,11 @@ const page = () => {
             <section className="lg:px-40 lg:py-40 px-10 py-20 mx-auto ">
                 <div className='flex lg:flex-row flex-col items-center justify-between gap-3 '>
                     <BlurFade delay={0.5} className='' blur="15px" inView>
-                        <img
-                            className=" size-110 object-cover hidden lg:block"
-                             src={"/sarita.jpg"}
-                        />
+                       <img
+    src="/sarita.jpg"
+    alt="Photo of Sarita"
+    className="w-40 h-40 object-cover rounded-md hidden lg:block"
+/>
                     </BlurFade>
                     <div className=' flex flex-col  items-center justify-center gap-7 '>
                         <motion.div
@@ -121,9 +122,10 @@ const page = () => {
                     </div>
                     <BlurFade delay={0.5} className='mt-9 lg:mt-0' blur="15px" inView>
                         <img
-                            className=" size-110 object-cover"
-                            src={"/priyanka.jpg"}
-                        />
+    src="/priyanka.jpg"
+    alt="Photo of Priyanka"
+    className="w-40 h-40 object-cover rounded-md"
+/>
                     </BlurFade>
                 </div>
             </section>
