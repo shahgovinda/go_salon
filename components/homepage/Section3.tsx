@@ -30,16 +30,16 @@ const Section3 = () => {
                             transition={{ duration: 0.5 }}
                             whileInView={{ opacity: 1, y: 0 }}
                         >
-                            <span className="instrument-font ">The perfect balance </span>
-                            <span className="carattere-font ">between luxurious pampering </span><br />
+                            <span className="instrument-font ">The harmony between </span>
+                            <span className="carattere-font ">powerful high -  </span><br />
                         </motion.div>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             // animate={{ opacity: 1, y: 0 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.5 }}>
-                            <span className="carattere-font">and affordable pricing </span>
-                            <span className="instrument-font"></span><br />
+                            <span className="carattere-font">performance ingredients </span>
+                            <span className="instrument-font">and exceptionally</span><br />
                         </motion.div>
                         <motion.span
                             initial={{ opacity: 0, y: 20 }}
