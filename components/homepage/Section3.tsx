@@ -16,7 +16,7 @@ const Section3 = () => {
                     <BlurFade offset={80} delay={0.8} direction="right" blur="10px" inView>
                         <img
                             className=" h-84 w-full lg:w-54 object-cover"
-                            src="https://www.shutterstock.com/image-photo/skin-care-woman-beauty-face-600nw-2206367897.jpg"
+                            src="priyA.png"
                         />
                     </BlurFade>
                 </div>
@@ -55,7 +55,7 @@ const Section3 = () => {
                     <BlurFade offset={80} delay={0.8} direction="left" blur="10px" inView>
                         <img
                             className="h-84 w-full lg:w-54 rounded-g object-cover"
-                            src="https://img.freepik.com/premium-photo/healthy-hair-woman-nice-girl-with-brown-curly-hair-hair-care-concept_263368-7637.jpg"
+                            src="PRIya.png"
                         />
                     </BlurFade>
                 </div>
