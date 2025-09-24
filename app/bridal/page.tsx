@@ -76,11 +76,10 @@ const page = () => {
             <section className="lg:px-40 lg:py-40 px-10 py-20 mx-auto ">
                 <div className='flex lg:flex-row flex-col items-center justify-between gap-3 '>
                     <BlurFade delay={0.5} className='' blur="15px" inView>
-                       <img
-    src="/bridal/sarita.jpg"
-    alt="Photo of Sarita"
-    className="w-40 h-40 object-cover rounded-md hidden lg:block"
-/>
+                        <img
+                            className=" size-110 object-cover hidden lg:block"
+                            src={"https://t3.ftcdn.net/jpg/15/41/31/64/240_F_1541316486_qLy2gEMRJSdLycVOmmTm3CRbPCTi3xKy.jpg"}
+                        />
                     </BlurFade>
                     <div className=' flex flex-col  items-center justify-center gap-7 '>
                         <motion.div
@@ -122,10 +121,9 @@ const page = () => {
                     </div>
                     <BlurFade delay={0.5} className='mt-9 lg:mt-0' blur="15px" inView>
                         <img
-    src="/bridal/priyanka.jpg"
-    alt="Photo of Priyanka"
-    className="w-40 h-40 object-cover rounded-md"
-/>
+                            className=" size-110 object-cover"
+                            src={"https://as1.ftcdn.net/v2/jpg/07/98/06/72/1000_F_798067228_bNqNBU1O2gYuYAha7ZdIc1ErwMreyUYo.jpg"}
+                        />
                     </BlurFade>
                 </div>
             </section>
