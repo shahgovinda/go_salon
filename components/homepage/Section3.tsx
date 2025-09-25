@@ -55,7 +55,7 @@ const Section3 = () => {
                     <BlurFade offset={80} delay={0.8} direction="left" blur="10px" inView>
                         <img
                             className="h-84 w-full lg:w-54 rounded-g object-cover"
-                            src="pyellow.jpg"
+                            src="porange.jpg"
                         />
                     </BlurFade>
                 </div>
