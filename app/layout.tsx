@@ -21,10 +21,16 @@ const carattere = Carattere({
   weight: "400",
 });
 
-
 export const metadata: Metadata = {
   title: "Go Parlour",
   description: "A Go Parlour app",
+  // Add this viewport configuration to disable zooming
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
 };
 
 export default function RootLayout({
@@ -37,24 +43,21 @@ export default function RootLayout({
       <body
         className={`${lexend.className} ${instrument.variable}  ${carattere.variable} antialiased relative scroll-smooth`}
       >
-
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-{/* 
-          <BubbleBackground
-            interactive
-            className="fixed inset-0  flex  pointer-events-auto items-center justify-center rounded-xl"
-          /> */}
+          {/* <BubbleBackground
+ 		 		 		interactive
+ 		 		 		className="fixed inset-0 	flex 	pointer-events-auto items-center justify-center rounded-xl"
+ 		 		 	/> */}
           <div className="relative flex flex-col">
             <Navbar />
             {children}
-            <Footer/>
+            <Footer />
           </div>
-          
         </ThemeProvider>
       </body>
     </html>
