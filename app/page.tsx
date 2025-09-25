@@ -52,13 +52,13 @@ export default function Home() {
                         <div className="flex flex-col items-center lg:flex-row gap-8 ">
                             <div className="inline-flex border -space-x-2">
 <Avatar>
-    <AvatarImage src="priya.jpg" alt="Priya" />
+    <AvatarImage src="white.png" alt="Priya" />
 </Avatar>
 <Avatar>
-    <AvatarImage src="priya.jpg" alt="Priya" />
+    <AvatarImage src="pinkk.png" alt="Priya" />
 </Avatar>
 <Avatar>
-    <AvatarImage src="priya.jpg" alt="Priya" />
+    <AvatarImage src="white.png" alt="Priya" />
 </Avatar>
                             </div>
                             <p className="text-muted-foreground text-sm">200+ Satisfied Clients All Over Mumbai</p>
