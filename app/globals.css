@@ -155,6 +155,10 @@
     /* This CSS property helps prevent pinch-to-zoom gestures */
     touch-action: pan-x pan-y;
   }
+  /* This rule disables click/touch events on all images */
+  img {
+    @apply pointer-events-none;
+  }
 }
 
 .instrument-font {
