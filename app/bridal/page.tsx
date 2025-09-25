@@ -78,7 +78,7 @@ const page = () => {
                     <BlurFade delay={0.5} className='' blur="15px" inView>
                         <img
                             className=" size-110 object-cover hidden lg:block"
-                            src={"/bridetobe.png"}
+                            src={"/sarita.JPG"}
                         />
                     </BlurFade>
                     <div className=' flex flex-col  items-center justify-center gap-7 '>
@@ -122,7 +122,7 @@ const page = () => {
                     <BlurFade delay={0.5} className='mt-9 lg:mt-0' blur="15px" inView>
                         <img
                             className=" size-110 object-cover"
-                            src={"https://as1.ftcdn.net/v2/jpg/07/98/06/72/1000_F_798067228_bNqNBU1O2gYuYAha7ZdIc1ErwMreyUYo.jpg"}
+                            src={"/priyanka.JPG"}
                         />
                     </BlurFade>
                 </div>
