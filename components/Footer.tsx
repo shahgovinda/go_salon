@@ -64,22 +64,22 @@ const Footer = () => {
                         <p className="text-xl instrument-font ">Our Look Book</p>
                         <span className='grid grid-cols-3 gap-5'>
                             <Link href={"/"} className='flex items-center gap-2 text-sm cursor-pointer'>
-                                <img src="https://images.pexels.com/photos/2921424/pexels-photo-2921424.jpeg" className='size-20 object-cover' alt="" />
+                                <img src="/priyanka.JPG" className='size-20 object-cover' alt="" />
                             </Link>
                             <Link href={"/"} className='flex items-center gap-2 text-sm cursor-pointer'>
-                                <img src="https://images.pexels.com/photos/2921424/pexels-photo-2921424.jpeg" className='size-20 object-cover' alt="" />
+                                <img src="/sarita.JPG" className='size-20 object-cover' alt="" />
                             </Link>
                             <Link href={"/"} className='flex items-center gap-2 text-sm cursor-pointer'>
-                                <img src="https://images.pexels.com/photos/2921424/pexels-photo-2921424.jpeg" className='size-20 object-cover' alt="" />
+                                <img src="/priyanka.JPG" className='size-20 object-cover' alt="" />
                             </Link>
                             <Link href={"/"} className='flex items-center gap-2 text-sm cursor-pointer'>
-                                <img src="https://images.pexels.com/photos/2921424/pexels-photo-2921424.jpeg" className='size-20 object-cover' alt="" />
+                                <img src="/sarita.JPG" className='size-20 object-cover' alt="" />
                             </Link>
                             <Link href={"/"} className='flex items-center gap-2 text-sm cursor-pointer'>
-                                <img src="https://images.pexels.com/photos/2921424/pexels-photo-2921424.jpeg" className='size-20 object-cover' alt="" />
+                                <img src="/priyanka.JPG" className='size-20 object-cover' alt="" />
                             </Link>
                             <Link href={"/"} className='flex items-center gap-2 text-sm cursor-pointer'>
-                                <img src="https://images.pexels.com/photos/2921424/pexels-photo-2921424.jpeg" className='size-20 object-cover' alt="" />
+                                <img src="/sarita.JPG" className='size-20 object-cover' alt="" />
                             </Link>
                         </span>
                     </div>
