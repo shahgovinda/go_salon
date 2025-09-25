@@ -24,13 +24,7 @@ const carattere = Carattere({
 export const metadata: Metadata = {
   title: "Go Parlour",
   description: "A Go Parlour app",
-  // Add this viewport configuration to disable zooming
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-  },
+  // We are removing the viewport from here to add it directly to the HTML
 };
 
 export default function RootLayout({
@@ -40,6 +34,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Manually inserting the viewport meta tag for better mobile browser compatibility */}
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+      </head>
       <body
         className={`${lexend.className} ${instrument.variable}  ${carattere.variable} antialiased relative scroll-smooth`}
       >
@@ -63,3 +64,4 @@ export default function RootLayout({
     </html>
   );
 }
+
