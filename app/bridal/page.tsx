@@ -102,7 +102,7 @@ const page = () => {
                             className=" flex items-center justify-center rounded-full lg:w-[50rem]   ">
 
                             <BlurText
-                                text={"Whether it is your wedding day, anniversary, graduation, prom, fashion shoot, photo shoot, or any other special occasion, let us take care of your hair and makeup needs. We will create the look of your desire, be it the latest runway trends or a traditional look."}
+                                text={"Your big day is our masterpiece. For any special event, we design your perfect hair and makeup look. Classic or trendy, your vision is our inspiration. Let's create a look you'll love!"}
                                 delay={40}
                                 animateBy="words"
                                 direction="top"
