@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 const beauticians = [
   {
-    image: "/priya.jpg",
+    image: "/pia.jpg",
     name: "Priya Shah",
     description: "\"Expert in modern makeup and skin care.\"",
     skill: "Makeup Artist"
