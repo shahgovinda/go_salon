@@ -37,7 +37,7 @@ export default function Home() {
                         <BlurFade delay={0.5} blur="10px" inView>
                             <img
                                 className="w-full h-full object-cover"
-                                src="/priya.jpg"
+                                src="/priyas.jpg"
                                 alt="Priya"
                             />
                         </BlurFade>
