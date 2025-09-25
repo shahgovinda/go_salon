@@ -78,7 +78,7 @@ const page = () => {
                     <BlurFade delay={0.5} className='' blur="15px" inView>
                         <img
                             className=" size-110 object-cover hidden lg:block"
-                            src={"https://t3.ftcdn.net/jpg/15/41/31/64/240_F_1541316486_qLy2gEMRJSdLycVOmmTm3CRbPCTi3xKy.jpg"}
+                            src={"/bridetobe.png"}
                         />
                     </BlurFade>
                     <div className=' flex flex-col  items-center justify-center gap-7 '>
