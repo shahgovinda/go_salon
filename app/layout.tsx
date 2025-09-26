@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Navbar } from "@/components/Navbar";
 import { BubbleBackground } from "@/components/animate-ui/backgrounds/bubble";
 import Footer from "@/components/Footer";
+import Image from "next/image"; // Added for the custom icon
+import { XIcon } from "lucide-react"; // Added for the close icon
 
 const instrument = Instrument_Serif({
   variable: "--font-instrument-serif",
@@ -50,10 +52,26 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          {/* ===== START: NEW BANNER ADDED HERE ===== */}
+          <div className="bg-gray-800 text-white flex items-center justify-center p-2 text-sm relative">
+            <Image
+              src="/makeupp.png" // IMPORTANT: Change this to your icon's path!
+              alt="Go Parlour Icon"
+              width={16}
+              height={16}
+              className="mr-2"
+            />
+            <span>Go Parlour</span>
+            <button className="absolute right-4" aria-label="Close banner">
+              <XIcon className="h-4 w-4" />
+            </button>
+          </div>
+          {/* ===== END: NEW BANNER ===== */}
+
           {/* <BubbleBackground
- 		 		 		interactive
- 		 		 		className="fixed inset-0 	flex 	pointer-events-auto items-center justify-center rounded-xl"
- 		 		 	/> */}
+            interactive
+            className="fixed inset-0  flex  pointer-events-auto items-center justify-center rounded-xl"
+          /> */}
           <div className="relative flex flex-col">
             <Navbar />
             {children}
@@ -64,4 +82,3 @@ export default function RootLayout({
     </html>
   );
 }
-
