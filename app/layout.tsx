@@ -23,8 +23,10 @@ const carattere = Carattere({
 
 export const metadata: Metadata = {
   title: "Priya Parlour",
-  description: "A Priya Parlour app",
-  // We are removing the viewport from here to add it directly to the HTML
+  description: 'Beauty and Care Services',
+  icons: {
+   icon: '/makeupp.png',
+  },
 };
 
 export default function RootLayout({
