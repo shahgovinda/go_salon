@@ -103,15 +103,15 @@ export default function Page() {
                                         <SelectValue placeholder="Select Your Location" />
                                     </SelectTrigger>
                                     <SelectContent>
-                                        <SelectItem value="Borivali West">Borivali</SelectItem>
-                                        <SelectItem value="Borivali East">Borivali</SelectItem>
-                                        <SelectItem value="Kandivali West">Kandivali</SelectItem>
-                                        <SelectItem value="Kandivali East">Kandivali</SelectItem>
-                                        <SelectItem value="Malad West">Malad</SelectItem>
-                                        <SelectItem value="Malad East">Malad</SelectItem>
-                                        <SelectItem value="Gorai 1">Gorai 2</SelectItem>
-                                        <SelectItem value="Dahisar West">Dahisar</SelectItem>
-                                        <SelectItem value="Dahisar East">Dahisar</SelectItem>
+                                        <SelectItem value="Borivali West">Borivali West</SelectItem>
+                                        <SelectItem value="Borivali East">Borivali East</SelectItem>
+                                        <SelectItem value="Kandivali West">Kandivali West</SelectItem>
+                                        <SelectItem value="Kandivali East">Kandivali East</SelectItem>
+                                        <SelectItem value="Malad West">Malad West</SelectItem>
+                                        <SelectItem value="Malad East">Malad East</SelectItem>
+                                        <SelectItem value="Gorai 1">Gorai 1</SelectItem>
+                                        <SelectItem value="Dahisar West">Dahisar West</SelectItem>
+                                        <SelectItem value="Dahisar East">Dahisar East</SelectItem>
                                     </SelectContent>
                                 </Select>
                                 {/* Hidden input for location */}
