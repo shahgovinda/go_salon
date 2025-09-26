@@ -24,8 +24,8 @@ const carattere = Carattere({
 });
 
 export const metadata: Metadata = {
-  title: "Go Parlour",
-  description: "A Go Parlour app",
+  title: "Priya Parlour",
+  description: "A Priya Parlour app",
   // We are removing the viewport from here to add it directly to the HTML
 };
 
@@ -56,7 +56,7 @@ export default function RootLayout({
           <div className="bg-gray-800 text-white flex items-center justify-center p-2 text-sm relative">
             <Image
               src="/makeupp.png" // IMPORTANT: Change this to your icon's path!
-              alt="Go Parlour Icon"
+              alt="Priya Parlour Icon"
               width={16}
               height={16}
               className="mr-2"
