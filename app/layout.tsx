@@ -22,8 +22,8 @@ const carattere = Carattere({
 });
 
 export const metadata: Metadata = {
-  title: "Go Parlour",
-  description: "A Go Parlour app",
+  title: "Priya Parlour",
+  description: "A Priya Parlour app",
   // We are removing the viewport from here to add it directly to the HTML
 };
 
