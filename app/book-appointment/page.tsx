@@ -103,11 +103,15 @@ export default function Page() {
                                         <SelectValue placeholder="Select Your Location" />
                                     </SelectTrigger>
                                     <SelectContent>
-                                        <SelectItem value="borivali">Borivali</SelectItem>
-                                        <SelectItem value="kandivali">Kandivali</SelectItem>
-                                        <SelectItem value="malad">Malad</SelectItem>
-                                        <SelectItem value="gorai 2">Gorai 2</SelectItem>
-                                        <SelectItem value="dahisar west">Dahisar</SelectItem>
+                                        <SelectItem value="Borivali West">Borivali</SelectItem>
+                                        <SelectItem value="Borivali East">Borivali</SelectItem>
+                                        <SelectItem value="Kandivali West">Kandivali</SelectItem>
+                                        <SelectItem value="Kandivali East">Kandivali</SelectItem>
+                                        <SelectItem value="Malad West">Malad</SelectItem>
+                                        <SelectItem value="Malad East">Malad</SelectItem>
+                                        <SelectItem value="Gorai 1">Gorai 2</SelectItem>
+                                        <SelectItem value="Dahisar West">Dahisar</SelectItem>
+                                        <SelectItem value="Dahisar East">Dahisar</SelectItem>
                                     </SelectContent>
                                 </Select>
                                 {/* Hidden input for location */}
